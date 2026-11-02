@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Indian Context Green Flag Scorecard | Modern Relationship & Values Quiz</title>
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#f0fdf4',
+              100: '#dcfce7',
+              200: '#bbf7d0',
+              300: '#86efac',
+              400: '#4ade80',
+              500: '#22c55e',
+              600: '#16a34a',
+              700: '#15803d',
+              800: '#166534',
+              900: '#14532d',
+              950: '#052e16',
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f8fafc;
+    }
+    .glass-card {
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(226, 232, 240, 0.8);
+    }
+    .gradient-hero {
+      background: linear-gradient(135deg, #052e16 0%, #14532d 50%, #166534 100%);
+    }
+    /* Smooth meter animation */
+    .gauge-circle {
+      transition: stroke-dashoffset 1.5s ease-in-out;
+    }
+    .option-card {
+      transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .option-card:hover {
+      transform: translateY(-2px);
+    }
+    /* Toast animation */
+    @keyframes toastIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .toast-anim {
+      animation: toastIn 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    }
+  </style>
+</head>
+<body class="min-h-screen text-slate-800 flex flex-col justify-between selection:bg-brand-200 selection:text-brand-900">
+
+  <!-- HEADER -->
+  <header class="w-full bg-white border-b border-slate-200 sticky top-0 z-40 shadow-sm">
+    <div class="max-w-4xl mx-auto px-4 py-3 flex items-center justify-between">
+      <div class="flex items-center space-x-2.5">
+        <div class="w-9 h-9 rounded-xl bg-brand-600 flex items-center justify-center text-white shadow-md shadow-brand-600/30">
+          <i data-lucide="shield-check" class="w-5 h-5"></i>
+        </div>
+        <div>
+          <h1 class="font-bold text-slate-900 leading-tight text-base sm:text-lg">Green Flag Scorecard</h1>
+          <p class="text-xs text-brand-700 font-medium hidden sm:block">Indian Marriage & Social Context Edition</p>
+        </div>
+      </div>
+      <div class="flex items-center space-x-3">
+        <span class="text-xs px-2.5 py-1 rounded-full bg-brand-50 text-brand-700 font-semibold border border-brand-200">
+          500 Points Max
+        </span>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN CONTAINER -->
+  <main class="max-w-4xl mx-auto px-4 py-6 sm:py-10 flex-grow w-full">
+
+    <!-- WELCOME / INTRO CARD -->
+    <div id="intro-screen" class="glass-card rounded-3xl p-6 sm:p-10 shadow-xl text-center space-y-6 transition-all duration-300">
+      <div class="w-16 h-16 sm:w-20 sm:h-20 bg-brand-100 rounded-2xl flex items-center justify-center mx-auto text-brand-600 shadow-inner">
+        <i data-lucide="heart-handshake" class="w-8 h-8 sm:w-10 sm:h-10"></i>
+      </div>
+      
+      <div class="space-y-3 max-w-2xl mx-auto">
+        <span class="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-brand-700 bg-brand-100 px-3 py-1 rounded-full">
+          <i data-lucide="sparkles" class="w-3.5 h-3.5"></i> Progressive Relationships
+        </span>
+        <h2 class="text-2xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+          How Progressive & Equal is Your Relationship Mindset?
+        </h2>
+        <p class="text-sm sm:text-base text-slate-600 leading-relaxed">
+          In the Indian marital and social ecosystem, traditional expectations often collide with modern ideals of equality. This 10-scenario scorecard evaluates commitment to dowry-free unions, career respect, shared labor, bodily autonomy, and emotional maturity.
+        </p>
+      </div>
+
+      <!-- Quick Info Badges -->
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 max-w-xl mx-auto pt-2 text-left">
+        <div class="p-3.5 bg-slate-50 rounded-xl border border-slate-200 flex items-start gap-3">
+          <i data-lucide="help-circle" class="w-5 h-5 text-brand-600 shrink-0 mt-0.5"></i>
+          <div>
+            <h4 class="text-xs font-bold text-slate-800">10 Scenarios</h4>
+            <p class="text-xs text-slate-500">Real Indian household dilemmas</p>
+          </div>
+        </div>
+        <div class="p-3.5 bg-slate-50 rounded-xl border border-slate-200 flex items-start gap-3">
+          <i data-lucide="award" class="w-5 h-5 text-brand-600 shrink-0 mt-0.5"></i>
+          <div>
+            <h4 class="text-xs font-bold text-slate-800">500 Total Points</h4>
+            <p class="text-xs text-slate-500">50 pts max per response</p>
+          </div>
+        </div>
+        <div class="p-3.5 bg-slate-50 rounded-xl border border-slate-200 flex items-start gap-3">
+          <i data-lucide="lock" class="w-5 h-5 text-brand-600 shrink-0 mt-0.5"></i>
+          <div>
+            <h4 class="text-xs font-bold text-slate-800">100% Private</h4>
+            <p class="text-xs text-slate-500">No data saved or tracked</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="pt-4">
+        <button onclick="startQuiz()" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 bg-brand-600 hover:bg-brand-700 text-white font-bold text-lg rounded-xl shadow-lg shadow-brand-600/30 transition-all transform active:scale-95">
+          <span>Begin Assessment</span>
+          <i data-lucide="arrow-right" class="w-5 h-5"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- QUIZ CONTAINER (Hidden by default) -->
+    <div id="quiz-screen" class="hidden space-y-6">
+
+      <!-- Progress Header -->
+      <div class="glass-card rounded-2xl p-4 sm:p-5 shadow-sm space-y-3">
+        <div class="flex items-center justify-between text-xs sm:text-sm font-semibold text-slate-600">
+          <span id="question-count" class="flex items-center gap-1.5 text-brand-700">
+            <i data-lucide="compass" class="w-4 h-4"></i> Scenario 1 of 10
+          </span>
+          <span id="question-category" class="bg-slate-100 px-3 py-1 rounded-full text-slate-700 text-xs font-bold">
+            Category Name
+          </span>
+        </div>
+        <!-- Progress Bar -->
+        <div class="w-full h-2.5 bg-slate-200 rounded-full overflow-hidden">
+          <div id="progress-bar" class="h-full bg-brand-600 transition-all duration-500 ease-out w-[10%]"></div>
+        </div>
+      </div>
+
+      <!-- Question Card -->
+      <div class="glass-card rounded-3xl p-6 sm:p-8 shadow-xl space-y-6">
+        <!-- Question Header -->
+        <div class="space-y-2">
+          <div class="flex items-center gap-2 text-xs font-extrabold text-brand-600 uppercase tracking-wide">
+            <span id="q-number-badge" class="w-6 h-6 rounded-full bg-brand-100 flex items-center justify-center text-brand-800">1</span>
+            <span>Scenario Assessment</span>
+          </div>
+          <h3 id="question-text" class="text-lg sm:text-2xl font-bold text-slate-900 leading-snug">
+            Question text loading...
+          </h3>
+          <p id="question-context" class="text-xs sm:text-sm text-slate-500 italic">
+            Context note...
+          </p>
+        </div>
+
+        <!-- Options List -->
+        <div id="options-container" class="space-y-3">
+          <!-- Dynamic options injected here -->
+        </div>
+
+        <!-- Navigation Footer -->
+        <div class="flex items-center justify-between pt-4 border-t border-slate-100">
+          <button id="btn-prev" onclick="prevQuestion()" class="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-xl border border-slate-300 text-slate-600 font-semibold hover:bg-slate-50 transition text-sm disabled:opacity-40 disabled:cursor-not-allowed">
+            <i data-lucide="chevron-left" class="w-4 h-4"></i> Previous
+          </button>
+          
+          <button id="btn-next" onclick="nextQuestion()" disabled class="inline-flex items-center gap-1.5 px-6 py-2.5 rounded-xl bg-brand-600 text-white font-semibold hover:bg-brand-700 transition text-sm disabled:opacity-50 disabled:cursor-not-allowed shadow-md shadow-brand-600/20">
+            <span>Next</span>
+            <i data-lucide="chevron-right" class="w-4 h-4"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- RESULTS SCREEN (Hidden by default) -->
+    <div id="results-screen" class="hidden space-y-8">
+      
+      <!-- HERO SCORE CARD -->
+      <div class="gradient-hero rounded-3xl p-6 sm:p-10 text-white shadow-2xl relative overflow-hidden text-center space-y-6">
+        <!-- Background accents -->
+        <div class="absolute -right-12 -top-12 w-48 h-48 bg-brand-500/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute -left-12 -bottom-12 w-48 h-48 bg-brand-300/10 rounded-full blur-3xl pointer-events-none"></div>
+
+        <span class="inline-block px-3 py-1 rounded-full bg-white/10 backdrop-blur-md text-emerald-200 text-xs font-bold uppercase tracking-wider border border-white/10">
+          Assessment Complete
+        </span>
+
+        <!-- Gauge SVG -->
+        <div class="relative w-48 h-48 mx-auto flex items-center justify-center">
+          <svg class="w-full h-full transform -rotate-90" viewBox="0 0 120 120">
+            <!-- Background circle -->
+            <circle cx="60" cy="60" r="50" stroke="rgba(255,255,255,0.15)" stroke-width="10" fill="transparent" />
+            <!-- Animated Gauge circle -->
+            <circle id="score-gauge" class="gauge-circle" cx="60" cy="60" r="50" 
+                    stroke="#4ade80" stroke-width="10" 
+                    stroke-dasharray="314.15" 
+                    stroke-dashoffset="314.15" 
+                    stroke-linecap="round"
+                    fill="transparent" />
+          </svg>
+          <div class="absolute inset-0 flex flex-col items-center justify-center text-center">
+            <span id="score-number" class="text-4xl sm:text-5xl font-black tracking-tight leading-none text-white">0</span>
+            <span class="text-xs font-medium text-emerald-200 mt-1 uppercase tracking-widest">out of 500</span>
+          </div>
+        </div>
+
+        <!-- Tier Title & Badge -->
+        <div class="space-y-2">
+          <div id="tier-badge" class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white text-slate-900 font-extrabold text-sm sm:text-base shadow-lg">
+            Loading Tier...
+          </div>
+          <h2 id="tier-title" class="text-2xl sm:text-3xl font-bold text-emerald-100">
+            Evaluating results...
+          </h2>
+          <p id="tier-description" class="text-sm sm:text-base text-emerald-100/90 max-w-xl mx-auto leading-relaxed">
+            Description loading...
+          </p>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="flex flex-wrap items-center justify-center gap-3 pt-2">
+          <button onclick="shareScore()" class="inline-flex items-center gap-2 px-6 py-3 bg-white hover:bg-emerald-50 text-brand-900 font-bold rounded-xl shadow-lg transition transform active:scale-95 text-sm">
+            <i data-lucide="share-2" class="w-4 h-4"></i> Copy Summary / Share
+          </button>
+          <button onclick="resetQuiz()" class="inline-flex items-center gap-2 px-6 py-3 bg-brand-800/80 hover:bg-brand-800 text-white font-bold rounded-xl border border-white/20 transition transform active:scale-95 text-sm">
+            <i data-lucide="rotate-ccw" class="w-4 h-4"></i> Retake Quiz
+          </button>
+        </div>
+      </div>
+
+      <!-- KEY CONTEXTUAL ANALYSIS CARDS -->
+      <div class="space-y-4">
+        <h3 class="text-xl font-bold text-slate-900 flex items-center gap-2">
+          <i data-lucide="bar-chart-3" class="w-5 h-5 text-brand-600"></i> Contextual Mindset Analysis
+        </h3>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4" id="category-breakdown-grid">
+          <!-- Dynamic category feedback cards -->
+        </div>
+      </div>
+
+      <!-- DETAILED ANSWER REVIEW -->
+      <div class="glass-card rounded-3xl p-6 sm:p-8 shadow-xl space-y-6">
+        <div class="flex items-center justify-between">
+          <h3 class="text-xl font-bold text-slate-900 flex items-center gap-2">
+            <i data-lucide="list-checks" class="w-5 h-5 text-brand-600"></i> Full Question Review
+          </h3>
+          <span class="text-xs text-slate-500 font-medium">10 Questions</span>
+        </div>
+
+        <div id="review-container" class="space-y-4">
+          <!-- Dynamic Q&A review items -->
+        </div>
+      </div>
+
+      <!-- BOTTOM ACTION -->
+      <div class="text-center py-4">
+        <button onclick="resetQuiz()" class="inline-flex items-center gap-2 px-8 py-3.5 bg-brand-600 hover:bg-brand-700 text-white font-bold rounded-xl shadow-lg shadow-brand-600/30 transition transform active:scale-95">
+          <i data-lucide="rotate-ccw" class="w-5 h-5"></i> Retake Scorecard
+        </button>
+      </div>
+
+    </div>
+
+  </main>
+
+  <!-- TOAST NOTIFICATION CONTAINER -->
+  <div id="toast-container" class="fixed bottom-6 right-6 z-50 pointer-events-none"></div>
+
+  <!-- FOOTER -->
+  <footer class="w-full bg-slate-900 text-slate-400 py-6 border-t border-slate-800 text-xs text-center">
+    <div class="max-w-4xl mx-auto px-4 space-y-2">
+      <p class="font-medium text-slate-300">Indian Context Green Flag Scorecard • Built for Progressive Partnership</p>
+      <p class="text-slate-500">Designed to encourage introspection, open dialogues, and equal partnerships in modern Indian homes.</p>
+    </div>
+  </footer>
+
+  <!-- JAVASCRIPT LOGIC -->
+  <script>
+    // QUESTION BANK (10 Questions, 50 pts each)
+    const questions = [
+      {
+        id: 1,
+        category: "Marriage & Gifts",
+        title: "Dowry, Wedding Demands & 'Gifts'",
+        context: "Evaluating stance on marriage expenses, rituals, and gifts from the bride's family.",
+        question: "During marriage discussions, how do you approach 'gift' expectations or wedding expenses from the bride's family?",
+        options: [
+          {
+            text: "Strict zero-tolerance stance: Zero gifts, gold, or financial demands requested or accepted. Wedding costs strictly split equally or kept minimal per mutual agreement.",
+            points: 50,
+            indicator: "green",
+            takeaway: "Complete refusal of dowry in any guise (under 'gifts' or 'customs') is fundamental to an equal partnership."
+          },
+          {
+            text: "We won't ask for anything directly, but whatever her family voluntarily wants to give out of affection is fine.",
+            points: 25,
+            indicator: "yellow",
+            takeaway: "'Voluntary gifts' often carry social coercion and family pressure in Indian weddings."
+          },
+          {
+            text: "Customs and rituals must be respected. The bride's family is expected to arrange a lavish wedding and provide customary gold/appliances.",
+            points: 0,
+            indicator: "red",
+            takeaway: "Expecting financial contributions or expensive wedding hosting reinforces patriarchal dowry logic."
+          }
+        ]
+      },
+      {
+        id: 2,
+        category: "Career & Independence",
+        title: "Wife's Career & Financial Independence",
+        context: "Evaluating support for a partner's professional ambition and financial autonomy.",
+        question: "If your partner receives a major job promotion or relocation offer that pays more than yours, how do you react?",
+        options: [
+          {
+            text: "Celebrate wholeheartedly! Actively adjust living arrangements, share domestic duties, or consider relocating together to support her career growth.",
+            points: 50,
+            indicator: "green",
+            takeaway: "Treating her career with equal dignity and willingness to adapt is a hallmark of a green-flag partner."
+          },
+          {
+            text: "Support it only if it doesn't disrupt household stability or family comfort, but relocation is out of the question.",
+            points: 25,
+            indicator: "yellow",
+            takeaway: "Conditioning a partner's career growth on male convenience prioritizes traditional hierarchy."
+          },
+          {
+            text: "Disapprove or discourage it. The primary breadwinner role belongs to the man; her job should remain secondary to domestic obligations.",
+            points: 0,
+            indicator: "red",
+            takeaway: "Viewing a woman's career as secondary undermines her long-term financial autonomy and identity."
+          }
+        ]
+      },
+      {
+        id: 3,
+        category: "Domestic Labor",
+        title: "Domestic Chores & Mental Load",
+        context: "Evaluating daily division of household responsibilities and administrative effort.",
+        question: "How are daily domestic chores (cooking, cleaning, groceries, home management) handled in your home?",
+        options: [
+          {
+            text: "Equally divided based on availability, without needing to be 'asked'. Mental load (planning meals, managing inventory) is shared proactively.",
+            points: 50,
+            indicator: "green",
+            takeaway: "True equality means taking full ownership of chores rather than waiting for instructions or 'helping out'."
+          },
+          {
+            text: "I help out whenever asked or when she is unwell/busy, but she primarily manages the household.",
+            points: 25,
+            indicator: "yellow",
+            takeaway: "Framing male domestic participation as 'helping' leaves the invisible mental load entirely on the woman."
+          },
+          {
+            text: "Domestic work is primarily the woman's responsibility (or managed by maids under her supervision). Men focus on external work.",
+            points: 0,
+            indicator: "red",
+            takeaway: "Gender-based division of household labor is rooted in patriarchal domestic expectations."
+          }
+        ]
+      },
+      {
+        id: 4,
+        category: "Family Boundaries",
+        title: "In-Laws & Extended Family Boundaries",
+        context: "Handling family opinions, joint-family dynamics, and privacy.",
+        question: "When your parents offer unsolicited advice or interfere in your partner's personal choices (e.g., career, attire, routine), how do you handle it?",
+        options: [
+          {
+            text: "Respectfully set clear boundaries with my parents directly. Protect our partnership's privacy and stand by my partner openly.",
+            points: 50,
+            indicator: "green",
+            takeaway: "Protecting your partner from in-law interference demonstrates maturity and respect for your core unit."
+          },
+          {
+            text: "Try to stay neutral or tell my partner to ignore it and compromise for the sake of peace and family harmony.",
+            points: 25,
+            indicator: "yellow",
+            takeaway: "Neutrality in the face of unfair family expectations usually forces the bride to bear the burden of compromise."
+          },
+          {
+            text: "Expect my partner to adapt and adjust to my parents' traditional norms without complaint out of respect for elders.",
+            points: 0,
+            indicator: "red",
+            takeaway: "Demanding one-sided adjustment from a daughter-in-law reinforces gendered family hierarchies."
+          }
+        ]
+      },
+      {
+        id: 5,
+        category: "Financial Partnership",
+        title: "Joint Financial & Family Decisions",
+        context: "Evaluating financial transparency, property ownership, and major decision-making.",
+        question: "How are major financial investments, property purchases, and long-term savings managed?",
+        options: [
+          {
+            text: "Joint discussions with equal voice. Assets/property are registered in both names, and both partners have full access to accounts.",
+            points: 50,
+            indicator: "green",
+            takeaway: "Co-ownership of financial decisions and assets provides security and genuine equality."
+          },
+          {
+            text: "I make the primary investment decisions after consulting her, but major financial control stays with me.",
+            points: 25,
+            indicator: "yellow",
+            takeaway: "Consultation without equal veto or ownership preserves a subtle financial power imbalance."
+          },
+          {
+            text: "Financial matters are handled exclusively by men in the family. The partner receives an allowance for household expenses.",
+            points: 0,
+            indicator: "red",
+            takeaway: "Restricting financial visibility creates dependence and limits a partner's autonomy."
+          }
+        ]
+      },
+      {
+        id: 6,
+        category: "Patriarchal Norms",
+        title: "Patriarchal Norms & Individual Identity",
+        context: "Addressing traditional expectations around surnames, ritual permissions, and social roles.",
+        question: "What is your perspective on traditions like surname changes, ritual fasts (Karwa Chauth), or asking 'permission' to visit friends/parents?",
+        options: [
+          {
+            text: "Everything is 100% voluntary. No expectation for surname change, no permission needed for personal choices, and mutual freedom is default.",
+            points: 50,
+            indicator: "green",
+            takeaway: "Dismantling compulsory patriarchal rituals respects her agency as an equal adult."
+          },
+          {
+            text: "I prefer following traditions for societal approval, but won't force her if she strongly opposes.",
+            points: 25,
+            indicator: "yellow",
+            takeaway: "Subtle social pressure to conform can feel restrictive even without explicit compulsion."
+          },
+          {
+            text: "Traditions must be maintained for cultural continuity. Surnames, ritual duties, and seeking permission are basic marital discipline.",
+            points: 0,
+            indicator: "red",
+            takeaway: "Treating adult partners like subordinates requiring 'permission' is a major red flag."
+          }
+        ]
+      },
+      {
+        id: 7,
+        category: "Bodily Autonomy",
+        title: "Bodily Autonomy, Attire & Freedom",
+        context: "Respecting personal clothing choices, social life, and physical autonomy.",
+        question: "How do you view your partner's choices regarding clothing, social outings, and personal habits?",
+        options: [
+          {
+            text: "Her body, her choice completely. She wears what she likes and maintains her social circle without monitoring or judgment.",
+            points: 50,
+            indicator: "green",
+            takeaway: "Unconditional respect for bodily autonomy and personal freedom forms core relationship trust."
+          },
+          {
+            text: "She can wear what she wants within reasonable limits depending on whether we are with my family or public settings.",
+            points: 25,
+            indicator: "yellow",
+            takeaway: "Policing attire based on context or family comfort restricts personal freedom."
+          },
+          {
+            text: "Her attire and social lifestyle must align with family values and dignity; I reserve the right to advise or veto inappropriate choices.",
+            points: 0,
+            indicator: "red",
+            takeaway: "Monitoring or controlling a partner's attire and mobility is a form of coercive control."
+          }
+        ]
+      },
+      {
+        id: 8,
+        category: "Conflict Resolution",
+        title: "Conflict Resolution & Emotional Maturity",
+        context: "Handling arguments, differences of opinion, and emotional stress.",
+        question: "During heated marital disagreements, what is your approach to resolving conflicts?",
+        options: [
+          {
+            text: "Listen actively without stonewalling, refrain from yelling or personal insults, take cool-off breaks, and seek compromise respectfully.",
+            points: 50,
+            indicator: "green",
+            takeaway: "Constructive communication without dominance or intimidation builds psychological safety."
+          },
+          {
+            text: "I tend to raise my voice or give the silent treatment initially, but eventually come around when things cool down.",
+            points: 25,
+            indicator: "yellow",
+            takeaway: "Stonewalling or elevated anger damages emotional intimacy even if resolved later."
+          },
+          {
+            text: "Assert authority to end the argument, dismiss her concerns as irrational, or use emotional guilt/threats until she backs down.",
+            points: 0,
+            indicator: "red",
+            takeaway: "Gaslighting, emotional manipulation, or dominance signals a toxic conflict environment."
+          }
+        ]
+      },
+      {
+        id: 9,
+        category: "Equal Parenting",
+        title: "Parenting & Childcare Responsibilities",
+        context: "Dividing childcare, parental leave, and child-rearing obligations.",
+        question: "How do you view parental responsibilities when raising children?",
+        options: [
+          {
+            text: "Equal co-parenting from day one: active diaper changes, night duties, school meetings, emotional support, and taking parental leave.",
+            points: 50,
+            indicator: "green",
+            takeaway: "Co-parenting ensures both partners maintain professional and personal equilibrium."
+          },
+          {
+            text: "Mother is the primary caregiver for young children; fathers step in mainly for play, finances, and discipline as they grow older.",
+            points: 25,
+            indicator: "yellow",
+            takeaway: "Delegating early child care solely to mothers creates extreme burnout and career gaps."
+          },
+          {
+            text: "Childcare is predominantly a mother's responsibility, assisted by grandmothers/maids. Men provide financial stability.",
+            points: 0,
+            indicator: "red",
+            takeaway: "Absolving fathers of hands-on daily care perpetuates unfair gender roles."
+          }
+        ]
+      },
+      {
+        id: 10,
+        category: "Individual Identity",
+        title: "Partner's Identity Outside Marriage",
+        context: "Nurturing individual dreams, solo trips, hobbies, and personal friendships.",
+        question: "How do you feel about your partner taking solo trips, pursuing time-consuming personal hobbies, or keeping close friends of all genders?",
+        options: [
+          {
+            text: "Fully supportive! Encouraging her identity outside the relationship makes our bond stronger and healthier.",
+            points: 50,
+            indicator: "green",
+            takeaway: "Encouraging an independent life outside marriage prevents codependency and resentment."
+          },
+          {
+            text: "Okay occasionally, provided it doesn't take too much time away from family duties or create awkwardness with opposite-gender friends.",
+            points: 25,
+            indicator: "yellow",
+            takeaway: "Insecurity regarding personal friendships or hobbies subtly restricts freedom."
+          },
+          {
+            text: "Uncomfortable with it. Once married, primary social life and focus should revolve around the home, husband, and family.",
+            points: 0,
+            indicator: "red",
+            takeaway: "Erasing a person's pre-marital identity leads to loss of selfhood and isolation."
+          }
+        ]
+      }
+    ];
+
+    // STATE VARIABLES
+    let currentQuestionIndex = 0;
+    let selectedAnswers = new Array(questions.length).fill(null);
+
+    // DOM ELEMENTS
+    const introScreen = document.getElementById('intro-screen');
+    const quizScreen = document.getElementById('quiz-screen');
+    const resultsScreen = document.getElementById('results-screen');
+    
+    const questionCount = document.getElementById('question-count');
+    const questionCategory = document.getElementById('question-category');
+    const progressBar = document.getElementById('progress-bar');
+    const qNumberBadge = document.getElementById('q-number-badge');
+    const questionText = document.getElementById('question-text');
+    const questionContext = document.getElementById('question-context');
+    const optionsContainer = document.getElementById('options-container');
+    const btnPrev = document.getElementById('btn-prev');
+    const btnNext = document.getElementById('btn-next');
+
+    // INITIALIZE LUCIDE ICONS ON LOAD
+    window.addEventListener('DOMContentLoaded', () => {
+      lucide.createIcons();
+    });
+
+    // START QUIZ
+    function startQuiz() {
+      introScreen.classList.add('hidden');
+      quizScreen.classList.remove('hidden');
+      resultsScreen.classList.add('hidden');
+      currentQuestionIndex = 0;
+      selectedAnswers = new Array(questions.length).fill(null);
+      renderQuestion();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    // RENDER QUESTION
+    function renderQuestion() {
+      const q = questions[currentQuestionIndex];
+
+      // Update Header & Progress
+      questionCount.innerHTML = `<i data-lucide="compass" class="w-4 h-4"></i> Scenario ${currentQuestionIndex + 1} of ${questions.length}`;
+      questionCategory.textContent = q.category;
+      qNumberBadge.textContent = currentQuestionIndex + 1;
+      questionText.textContent = q.question;
+      questionContext.textContent = q.context;
+
+      const progressPercent = ((currentQuestionIndex + 1) / questions.length) * 100;
+      progressBar.style.width = `${progressPercent}%`;
+
+      // Render Options
+      optionsContainer.innerHTML = '';
+      q.options.forEach((opt, idx) => {
+        const isSelected = selectedAnswers[currentQuestionIndex] === idx;
+        
+        const card = document.createElement('div');
+        card.className = `option-card p-4 sm:p-5 rounded-2xl border-2 cursor-pointer flex items-start gap-4 transition ${
+          isSelected 
+            ? 'border-brand-600 bg-brand-50/80 shadow-md ring-2 ring-brand-500/20' 
+            : 'border-slate-200 hover:border-brand-300 bg-white hover:bg-slate-50/80'
+        }`;
+        
+        card.onclick = () => selectOption(idx);
+
+        card.innerHTML = `
+          <div class="mt-0.5 w-6 h-6 rounded-full border-2 flex items-center justify-center shrink-0 ${
+            isSelected ? 'border-brand-600 bg-brand-600 text-white' : 'border-slate-300 bg-white'
+          }">
+            ${isSelected ? '<i data-lucide="check" class="w-4 h-4"></i>' : `<span class="text-xs font-bold text-slate-400">${String.fromCharCode(65 + idx)}</span>`}
+          </div>
+          <div class="space-y-1 flex-grow">
+            <p class="text-sm sm:text-base font-semibold text-slate-800 leading-snug">${opt.text}</p>
+          </div>
+        `;
+
+        optionsContainer.appendChild(card);
+      });
+
+      // Update Navigation Buttons
+      btnPrev.disabled = currentQuestionIndex === 0;
+      btnNext.disabled = selectedAnswers[currentQuestionIndex] === null;
+
+      if (currentQuestionIndex === questions.length - 1) {
+        btnNext.innerHTML = `<span>View Results</span> <i data-lucide="award" class="w-4 h-4"></i>`;
+      } else {
+        btnNext.innerHTML = `<span>Next</span> <i data-lucide="chevron-right" class="w-4 h-4"></i>`;
+      }
+
+      lucide.createIcons();
+    }
+
+    // OPTION SELECTION
+    function selectOption(optionIndex) {
+      selectedAnswers[currentQuestionIndex] = optionIndex;
+      renderQuestion();
+    }
+
+    // NAVIGATION
+    function nextQuestion() {
+      if (selectedAnswers[currentQuestionIndex] === null) return;
+
+      if (currentQuestionIndex < questions.length - 1) {
+        currentQuestionIndex++;
+        renderQuestion();
+        window.scrollTo({ top: quizScreen.offsetTop - 80, behavior: 'smooth' });
+      } else {
+        calculateAndDisplayResults();
+      }
+    }
+
+    function prevQuestion() {
+      if (currentQuestionIndex > 0) {
+        currentQuestionIndex--;
+        renderQuestion();
+        window.scrollTo({ top: quizScreen.offsetTop - 80, behavior: 'smooth' });
+      }
+    }
+
+    // CALCULATE & DISPLAY RESULTS
+    function calculateAndDisplayResults() {
+      quizScreen.classList.add('hidden');
+      resultsScreen.classList.remove('hidden');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+
+      // Total Score Calculation
+      let totalScore = 0;
+      selectedAnswers.forEach((ansIdx, qIdx) => {
+        if (ansIdx !== null) {
+          totalScore += questions[qIdx].options[ansIdx].points;
+        }
+      });
+
+      // Tier Determination
+      let tierInfo = {};
+      if (totalScore >= 450) {
+        tierInfo = {
+          badge: "Forest of Green Flags 🌳",
+          title: "Deeply Progressive & Equal Partner",
+          description: "Exceptional score! You demonstrate a mature, highly progressive mindset that rejects patriarchal shortcuts. You actively value autonomy, equal labor, and true partnership in an Indian household.",
+          color: "#22c55e",
+          bgClass: "bg-emerald-100 text-emerald-900"
+        };
+      } else if (totalScore >= 350) {
+        tierInfo = {
+          badge: "Solid Green Flag 💚",
+          title: "Progressive Mindset with Room for Nuance",
+          description: "Great score! You hold strong progressive values and genuinely respect equality. A few subtle traditional blind spots may exist, but you are open to growth and communication.",
+          color: "#4ade80",
+          bgClass: "bg-brand-100 text-brand-900"
+        };
+      } else if (totalScore >= 200) {
+        tierInfo = {
+          badge: "Yellow Flag Zone ⚠️",
+          title: "Mixed Mindset - Needs Unlearning",
+          description: "Moderate score. You balance modern ideas with deeply ingrained patriarchal expectations. Unlearning inherited social norms around domestic roles, in-law pressure, or compromise will improve relationship equality.",
+          color: "#f59e0b",
+          bgClass: "bg-amber-100 text-amber-900"
+        };
+      } else {
+        tierInfo = {
+          badge: "Red Flag Alert 🚩",
+          title: "Needs Introspection & Mindset Shift",
+          description: "Low score. Your responses lean heavily on traditional patriarchal expectations, male authority, or double standards. Honest self-reflection and learning to prioritize equal dignity are essential.",
+          color: "#ef4444",
+          bgClass: "bg-red-100 text-red-900"
+        };
+      }
+
+      // Animate Score Counter
+      animateScore(totalScore);
+
+      // Set Gauge SVG Offset
+      const maxOffset = 314.15; // 2 * pi * r (r=50)
+      const offset = maxOffset - (totalScore / 500) * maxOffset;
+      const gaugeCircle = document.getElementById('score-gauge');
+      gaugeCircle.style.stroke = tierInfo.color;
+      setTimeout(() => {
+        gaugeCircle.style.strokeDashoffset = offset;
+      }, 100);
+
+      // Render Tier Text
+      document.getElementById('tier-badge').textContent = tierInfo.badge;
+      document.getElementById('tier-badge').className = `inline-flex items-center gap-2 px-4 py-1.5 rounded-full font-extrabold text-sm sm:text-base shadow-lg ${tierInfo.bgClass}`;
+      document.getElementById('tier-title').textContent = tierInfo.title;
+      document.getElementById('tier-description').textContent = tierInfo.description;
+
+      // Render Breakdown & Answers Review
+      renderCategoryBreakdown();
+      renderAnswerReview();
+
+      lucide.createIcons();
+    }
+
+    // ANIMATE NUMERIC SCORE
+    function animateScore(targetScore) {
+      const scoreElem = document.getElementById('score-number');
+      let currentScore = 0;
+      const duration = 1200; // ms
+      const stepTime = 20;
+      const steps = duration / stepTime;
+      const increment = targetScore / steps;
+
+      const timer = setInterval(() => {
+        currentScore += increment;
+        if (currentScore >= targetScore) {
+          scoreElem.textContent = targetScore;
+          clearInterval(timer);
+        } else {
+          scoreElem.textContent = Math.round(currentScore);
+        }
+      }, stepTime);
+    }
+
+    // RENDER CATEGORY BREAKDOWN GRID
+    function renderCategoryBreakdown() {
+      const grid = document.getElementById('category-breakdown-grid');
+      grid.innerHTML = '';
+
+      questions.forEach((q, idx) => {
+        const selectedOptIdx = selectedAnswers[idx];
+        const selectedOpt = q.options[selectedOptIdx];
+        
+        let indicatorBadge = '';
+        if (selectedOpt.indicator === 'green') {
+          indicatorBadge = `<span class="px-2.5 py-0.5 rounded-full bg-emerald-100 text-emerald-800 text-xs font-bold flex items-center gap-1"><i data-lucide="check-circle-2" class="w-3.5 h-3.5"></i> 50/50 Pts</span>`;
+        } else if (selectedOpt.indicator === 'yellow') {
+          indicatorBadge = `<span class="px-2.5 py-0.5 rounded-full bg-amber-100 text-amber-800 text-xs font-bold flex items-center gap-1"><i data-lucide="alert-triangle" class="w-3.5 h-3.5"></i> 25/50 Pts</span>`;
+        } else {
+          indicatorBadge = `<span class="px-2.5 py-0.5 rounded-full bg-red-100 text-red-800 text-xs font-bold flex items-center gap-1"><i data-lucide="x-circle" class="w-3.5 h-3.5"></i> 0/50 Pts</span>`;
+        }
+
+        const card = document.createElement('div');
+        card.className = "bg-white p-5 rounded-2xl border border-slate-200 shadow-sm space-y-2";
+        card.innerHTML = `
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-bold text-slate-500 uppercase tracking-wider">${q.category}</span>
+            ${indicatorBadge}
+          </div>
+          <h4 class="font-bold text-slate-900 text-sm sm:text-base">${q.title}</h4>
+          <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">${selectedOpt.takeaway}</p>
+        `;
+        grid.appendChild(card);
+      });
+    }
+
+    // RENDER FULL ANSWER REVIEW
+    function renderAnswerReview() {
+      const reviewContainer = document.getElementById('review-container');
+      reviewContainer.innerHTML = '';
+
+      questions.forEach((q, qIdx) => {
+        const selectedOptIdx = selectedAnswers[qIdx];
+        const selectedOpt = q.options[selectedOptIdx];
+
+        const item = document.createElement('div');
+        item.className = "p-4 sm:p-5 rounded-2xl bg-slate-50 border border-slate-200 space-y-3";
+
+        let borderClass = "border-l-4 border-l-emerald-500";
+        if (selectedOpt.indicator === 'yellow') borderClass = "border-l-4 border-l-amber-500";
+        if (selectedOpt.indicator === 'red') borderClass = "border-l-4 border-l-red-500";
+
+        item.className += ` ${borderClass}`;
+
+        item.innerHTML = `
+          <div class="space-y-1">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-bold text-brand-700">Question ${qIdx + 1}: ${q.category}</span>
+              <span class="text-xs font-extrabold text-slate-700">${selectedOpt.points} / 50 pts</span>
+            </div>
+            <h4 class="font-bold text-slate-900 text-sm sm:text-base">${q.question}</h4>
+          </div>
+
+          <div class="p-3 rounded-xl bg-white border border-slate-200 text-xs sm:text-sm space-y-1">
+            <span class="font-semibold text-slate-500 block text-[11px] uppercase">Your Choice:</span>
+            <p class="text-slate-800 font-medium">${selectedOpt.text}</p>
+          </div>
+
+          <div class="flex items-start gap-2 text-xs text-slate-600 bg-brand-50/60 p-2.5 rounded-lg border border-brand-100">
+            <i data-lucide="info" class="w-4 h-4 text-brand-700 shrink-0 mt-0.5"></i>
+            <span><strong>Contextual Insight:</strong> ${selectedOpt.takeaway}</span>
+          </div>
+        `;
+
+        reviewContainer.appendChild(item);
+      });
+    }
+
+    // SHARE SCORE
+    function shareScore() {
+      let totalScore = 0;
+      selectedAnswers.forEach((ansIdx, qIdx) => {
+        if (ansIdx !== null) totalScore += questions[qIdx].options[ansIdx].points;
+      });
+
+      let tierBadge = "Solid Green Flag 💚";
+      if (totalScore >= 450) tierBadge = "Forest of Green Flags 🌳";
+      if (totalScore < 350 && totalScore >= 200) tierBadge = "Yellow Flag Zone ⚠️";
+      if (totalScore < 200) tierBadge = "Red Flag Alert 🚩";
+
+      const shareText = `🇮🇳 Indian Context Green Flag Scorecard\nMy Score: ${totalScore}/500 Points (${tierBadge})\n\nEvaluating progressive values, equal partnership, & modern relationships in the Indian context.\n\nTake the test yourself!`;
+
+      // Copy using legacy standard for reliable iframe execution
+      const dummy = document.createElement("textarea");
+      document.body.appendChild(dummy);
+      dummy.value = shareText;
+      dummy.select();
+      document.execCommand("copy");
+      document.body.removeChild(dummy);
+
+      showToast("Score summary copied to clipboard! Ready to share on WhatsApp / Twitter.");
+    }
+
+    // TOAST NOTIFICATION
+    function showToast(message) {
+      const container = document.getElementById('toast-container');
+      const toast = document.createElement('div');
+      toast.className = "toast-anim bg-slate-900 text-white px-5 py-3 rounded-xl shadow-2xl flex items-center gap-3 text-xs sm:text-sm font-semibold border border-slate-700 max-w-sm pointer-events-auto";
+      toast.innerHTML = `
+        <i data-lucide="check-circle" class="w-5 h-5 text-brand-400 shrink-0"></i>
+        <span>${message}</span>
+      `;
+      container.appendChild(toast);
+      lucide.createIcons();
+
+      setTimeout(() => {
+        toast.style.opacity = '0';
+        toast.style.transition = 'opacity 0.3s ease';
+        setTimeout(() => toast.remove(), 300);
+      }, 3500);
+    }
+
+    // RESET QUIZ
+    function resetQuiz() {
+      resultsScreen.classList.add('hidden');
+      introScreen.classList.remove('hidden');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>
